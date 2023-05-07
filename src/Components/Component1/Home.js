@@ -7,8 +7,6 @@ import WelcomigDesign from "./WelcomingDesign";
 function Home() {
   return (
     <div>
-      <GreenPart />
-      <Navbar />
       <WelcomigDesign />
     </div>
   );

@@ -15,6 +15,7 @@ import Table from "./../../BackEnd/Table";
 import "./navbar.css";
 import App from "../../App";
 import BestSeller from "../BesetSeller/BestSeller";
+import { Link } from "react-router-dom";
 
 // function displayCartItems() {
 //   return (
@@ -80,11 +81,11 @@ function Navbar() {
 
           <div className="col-md-6">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+              <ul class="d-flex navbar-nav mr-auto align-items-center">
                 <li class="nav-item active">
-                  <a class="nav-item" href="#">
+                  <Link className="home-nav-bar-btn" to={"/"}>
                     Home
-                  </a>
+                  </Link>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -129,9 +130,9 @@ function Navbar() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-item" href="#">
-                    pages
-                  </a>
+                  <Link className="home-nav-bar-btn" to={"products"}>
+                    products
+                  </Link>
                 </li>
               </ul>
             </div>
