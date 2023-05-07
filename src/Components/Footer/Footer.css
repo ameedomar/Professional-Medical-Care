@@ -1,0 +1,53 @@
+.social-media-icon{
+    margin-right: 15px;
+    padding: 2px;
+}
+.footer-logo-title{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+.hr-line{
+    margin: 60px 0px;
+}
+
+.title-footer-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 6px;
+    letter-spacing: 0.1px;
+    
+    color: #252B42;
+    
+}
+.normal-text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    padding: 6px 6px;
+    
+    letter-spacing: 0.2px;    
+    color: #737373;
+}
+.footer-of-footer{
+    background: #FAFAFA;
+}
+.text-of-footer-of-footer{
+    font-size: 14px;
+    margin-top: 25px;
+    padding: 22px 5px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    color: #737373;
+    text-align: left;
+    padding-left: 12%;
+
+}

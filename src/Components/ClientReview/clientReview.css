@@ -1,0 +1,77 @@
+.main-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    
+    letter-spacing: 0.2px;
+    
+    color: #252B42;
+}
+.main-title-des{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    padding-bottom: 60px;    
+    text-align: center;
+    letter-spacing: 0.2px;
+        
+    color: #737373;
+}
+
+.review-card{
+    padding: 20px 90px;
+}
+.stars-img{
+    padding: 25px 0px;
+}
+.client-review-text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 138%;
+    padding-bottom: 20px;
+
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #737373;
+}
+.client-name{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 141%;
+    
+    text-align: center;
+    letter-spacing: 0.2px;
+    
+    color: #23A6F0;
+}
+.client-profission{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    
+    text-align: center;
+    letter-spacing: 0.2px;
+    
+    color: #737373;
+}
+.star-rating .fas {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: gold;
+}
+.far{
+    color: gold;
+    padding-left: 5px;
+  }

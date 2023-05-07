@@ -1,0 +1,66 @@
+.comp2Parent{
+    margin-top: 100px;
+}
+.i1{
+    background-image: url("./../../imgs/comp2/item (1).jpg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+.i2{
+    background-image: url("./../../imgs/comp2/item (2).jpg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.i3{
+    
+    background-image: url("./../../imgs/comp2/item (2).png");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.i4{
+    background-image: url("./../../imgs/comp2/item (3).png");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.i5{
+    background-image: url("./../../imgs/comp2/item (1).png");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-text-content{
+    padding: 30px;
+}
+.card-text{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: left;
+    line-height: 80%;
+    
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+.item-nubmer-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 80%;
+    text-align: left;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,61 @@
+
+.parentImg{
+    display: flex;
+    background-image: url("./../../imgs/hero-6-cover.jpg");
+    background-color: rgba(0, 0, 0, 0.25);
+    height: 600px;
+}
+
+.contentImg{
+    text-align: left;
+    margin: auto 0;
+}
+.summerImg{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    
+    letter-spacing: 0.1px;    
+    color: #FFFFFF;
+
+}
+.titleImg{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.descriptionImg{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.buttonImg{
+    background-color: Transparent; 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    
+
+    align-items: center;
+    padding: 15px 36px;
+    gap: 10px;
+
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #fff;
+
+    border: 2px solid white;
+
+    border-radius: 25px;
+
+}

@@ -1,0 +1,43 @@
+.subscribe-container{
+    width: 100%;
+    background: #2A7CC7;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+.subscribe-title{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 118%;
+    padding-right: 150px;
+    text-align: left;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+.subscribe-description{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 144%;
+    text-align: left;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    }
+.get-started-btn{
+    background-color: #ffffff;
+    color: #2A7CC7;
+    padding: 12px 28px;
+    border-radius: 2px;
+    border-width: 0px;
+}
+.get-started-btn:hover{
+    background-color: #2A7CC7;
+    color:#ffffff ;
+    padding: 12px 28px;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: #FFFFFF;
+}
