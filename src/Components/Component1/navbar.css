@@ -66,3 +66,9 @@
   .home-nav-bar-btn{
     color: #777;
   }
+  .img-navbar-cart{
+    width: 250px;
+    height: 250px;
+    padding: 10px 10px;
+    border-radius: 40px;
+  }

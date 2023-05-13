@@ -63,7 +63,7 @@ function ClientReview(props) {
         </div>
         {ClientReview.map((item) => (
           <div className="col-md-4 ">
-            <div className="review-card">
+            <div className="review-card text-center">
               <img
                 src={item.profileImg}
                 alt="Profile Img"

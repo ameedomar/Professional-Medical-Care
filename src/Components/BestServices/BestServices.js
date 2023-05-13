@@ -30,13 +30,18 @@ function BestServices() {
         <p className="featured-products">Featured Products</p>
         <h2 className="best-services">The Best Services</h2>
         <p className="proplems-text">
-          Problems trying to resolve the conflict between{" "}
+          Problems trying to resolve the conflict between
         </p>
+
         {BestServicesContent.map((item) => (
-          <div className="col-md-4">
+          <div className="col-md-4 text-align-center">
             <div className="feature-card">
               <div className="icon-feature">
-                <img src={item.icon} alt="icon" />
+                <img
+                  src={item.icon}
+                  alt="icon"
+                  className="icon-in-best-services"
+                />
               </div>
               <h3 className="feature-name">{item.feature}</h3>
               <p className="description-feature">{item.description}</p>

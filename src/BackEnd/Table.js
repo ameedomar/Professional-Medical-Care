@@ -49,7 +49,6 @@ function Table() {
   }
 
   useEffect(() => {
-    // Fetch the data from the Firebase Realtime Database using the REST API
     fetch("https://react-medical-care-default-rtdb.firebaseio.com/product.json")
       .then((response) => response.json())
       .then((data) => {
@@ -155,7 +154,9 @@ function Table() {
             {fillTable.map((item, index) => (
               <tr className="automatic-row">
                 <td className="test">{index}</td>
-                <td>{item.img}</td>
+                <td>
+                  <img src={item.img} className="img-table" />
+                </td>
                 <td>{item.title}</td>
                 <td>{item.type}</td>
                 <td>{item.price}</td>

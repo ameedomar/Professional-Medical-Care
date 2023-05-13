@@ -14,7 +14,7 @@ function Subscribe() {
               small-scale behavior during the first quarter of the 20th{" "}
             </p>
           </div>
-          <div className="col-md-6 align-self-center">
+          <div className="col-md-7 text-center  my-auto">
             <button
               type="button"
               class="btn btn-primary"

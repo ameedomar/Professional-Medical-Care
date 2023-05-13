@@ -73,10 +73,6 @@
   
 }
 .footer-post-part{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 40%;
 }
 .learn-more-footer{
     font-family: 'Montserrat';
@@ -90,7 +86,6 @@
     color: #737373;
 }
 .next-arrow{
-    margin-top: 5px;
-    width: 20px;
-    height: 15px;
+    width: auto;
+    height: auto;
 }

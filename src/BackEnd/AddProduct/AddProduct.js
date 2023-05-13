@@ -1,26 +1,60 @@
 import React, { useState, useEffect } from "react";
-import { useRef } from "react";
 import "./AddProduct.css";
+import {
+  ref,
+  uploadBytes,
+  getDownloadURL,
+  listAll,
+  list,
+} from "firebase/storage";
+import { storage } from "./../firebase";
+import { v4 } from "uuid";
 
 function AddProduct({ PanelState, onPanel }) {
   const [title, setTitle] = useState("");
   const [type, setType] = useState("");
   const [price, setPrice] = useState(0);
   const [filldFlag, setfillFlag] = useState(false);
+  const [imageUpload, setImageUpload] = useState(null);
+  const [imageUrls, setImageUrls] = useState([]);
+  const [uploadBtn, setuploadtn] = useState(true);
   function removePanel() {
     onPanel(false);
   }
+
+  const imagesListRef = ref(storage, "images/");
+  const uploadFile = (event) => {
+    event.preventDefault();
+
+    if (imageUpload == null) return;
+    const imageRef = ref(storage, `images/${imageUpload.name + v4()}`);
+    uploadBytes(imageRef, imageUpload).then((snapshot) => {
+      getDownloadURL(snapshot.ref).then((url) => {
+        setImageUrls(url);
+        setuploadtn(false);
+      });
+    });
+  };
+  useEffect(() => {
+    listAll(imagesListRef).then((response) => {
+      response.items.forEach((item) => {
+        getDownloadURL(item).then((url) => {
+          setImageUrls((prev) => [...prev, url]);
+        });
+      });
+    });
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const product = {
       title: title,
-      img: "will be checked later",
+      img: imageUrls,
       type: type,
       price: price,
     };
     console.log(product);
-    if (product.title == "" || product.type == "") {
+    if (product.title == "" || product.type == "" || uploadBtn) {
       setfillFlag(true);
       return;
     }
@@ -116,6 +150,14 @@ function AddProduct({ PanelState, onPanel }) {
                   value={price}
                   onChange={(event) => setPrice(event.target.value)}
                 />
+                <input
+                  type="file"
+                  onChange={(event) => {
+                    setImageUpload(event.target.files[0]);
+                  }}
+                />
+                <button onClick={uploadFile}>Upload Image</button>
+
                 {filldFlag && (
                   <small className="smallMsg">Please fill al fields!</small>
                 )}

@@ -9,6 +9,8 @@
    
 }
 .btn-add-new-item{
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: darkcyan;
     color: #fff;
     font-family: 'Raleway';
@@ -78,5 +80,10 @@
     font-style: normal;
     font-weight: 700;
     color: darkcyan;   
+}
+.img-table{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
 }
 

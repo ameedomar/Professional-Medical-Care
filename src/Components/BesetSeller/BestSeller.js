@@ -9,7 +9,8 @@ import BestSellerImg7 from "../../imgs/BestSellerImg/BestSeller7.png";
 import BestSellerImg8 from "../../imgs/BestSellerImg/BestSeller8.png";
 import "./bestSeller.css";
 import { BestSellerContext } from "./BestSellerContext";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart as farHeart } from "@fortawesome/free-regular-svg-icons";
 function BestSeller() {
   const [cart, setCart] = useContext(BestSellerContext);
   const [BestSellerProducts, setBestSellerProdcuts] = useState([
@@ -116,14 +117,14 @@ function BestSeller() {
               <div className="product-card">
                 <h5 className="productSpeciality">{item.title}</h5>
                 <p className="productType">{item.type}</p>
-                <img src={BestSellerImg8} />
+                <img src={item.img} className="img-beset-seller" />
                 <div className="price-part">
                   <div className="container">
-                    <div className="row">
-                      <div className="col-md-4 d-flex pt-2">
+                    <div className="row align-items-center">
+                      <div className="col-md-3 d-flex pt-2 align-items-center">
                         <p className="product-price ">${item.price}</p>
                       </div>
-                      <div className="col-md-8 d-flex justify-content-end">
+                      <div className="col-md-7 d-flex justify-content-end">
                         <button
                           type="button"
                           className="btn btn-success"
@@ -131,6 +132,12 @@ function BestSeller() {
                         >
                           Add To Cart
                         </button>
+                      </div>
+                      <div className="col-md-2 d-flex justify-content-end">
+                        {/* <FontAwesomeIcon
+                          className="empty-love"
+                          icon={farHeart}
+                        /> */}
                       </div>
                     </div>
                   </div>

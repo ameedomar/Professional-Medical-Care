@@ -14,7 +14,7 @@ function EditProduct({ PanelState, onPanel, itemId, titlee, typee, pricee }) {
     event.preventDefault();
     const product = {
       title: title,
-      img: "will be checked later 6:08",
+      img: "will be checked later",
       type: type,
       price: price,
     };

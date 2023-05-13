@@ -59,9 +59,11 @@ function Post() {
                   <p>{item.comments} comments</p>
                 </div>
               </div>
-              <div className="footer-post-part">
+
+              <div className="row footer-post-part">
                 <h3 className="learn-more-footer">Learn More</h3>
-                <img src={next} alt="next arrow" className="next-arrow" />
+
+                {/* <img src={next} alt="next arrow" className="next-arrow" /> */}
               </div>
             </div>
           </div>

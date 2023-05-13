@@ -40,7 +40,9 @@
 .feature-card{
     margin-top: 60px;
     padding: 25px 20px;
+    text-align: center;
 }
+
 .feature-name{
     font-family: 'Montserrat';
     font-style: normal;

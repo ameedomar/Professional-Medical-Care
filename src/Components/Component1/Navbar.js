@@ -182,8 +182,10 @@ function Navbar() {
                                   {item.title}
                                 </h5>
                                 <p className="productType">{item.type}</p>
-                                <img src={itemImg} />
-                                <p> {item.img}</p>
+                                <img
+                                  src={item.img}
+                                  className="img-navbar-cart"
+                                />
                                 <div className="price-part">
                                   <div className="container">
                                     <div className="row">

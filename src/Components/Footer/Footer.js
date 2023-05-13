@@ -45,7 +45,7 @@ function Footer() {
           <div className="col-md-6 d-flex justify-content-start">
             <h2 className="footer-logo-title">MEDSONO</h2>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 d-flex justify-content-center  ">
             <img
               src={facebook}
               alt="social media icon"
